@@ -1,4 +1,6 @@
-![CheerBot](./assets/cheerbot.png)
+<div style="text-align: center;">
+    <img src="./assets/cheerbot.png" alt="Description" width="200">
+</div>
 
 # Introduction
 
