@@ -29,7 +29,7 @@ CheerBot was inspired by our experiences at BrainStation. We noticed that many o
 
 ## Contributors
 
-- **Lily Le and Mac Shihab:** Creators and developers of CheerBot
+- **[Lily Le](https://github.com/lilymtle) and [Mac Shihab](https://github.com/mahmoud-shihab):** Creators and developers of CheerBot
 
 ## Libraries and Tools
 
