@@ -4,8 +4,6 @@
 
 # Commands
 
-# Commands
-
 | Command      | Description                                        |
 |--------------|----------------------------------------------------|
 | `/cheerup`   | Replies with a positive quote to help you cheer up!|
