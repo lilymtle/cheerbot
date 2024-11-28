@@ -1,6 +1,6 @@
-<div style="text-align: center;">
-    <img src="./assets/cheerbot.png" alt="Description" width="200">
-</div>
+<p align="center">
+    <img src="./assets/cheerbot.png" alt="CheerBot" width="200">
+</p>
 
 # Introduction
 
