@@ -1,3 +1,5 @@
+![CheerBot](./assets/cheerbot.png)
+
 # Introduction
 
 Meet CheerBot, your friendly Discord companion designed to spread positivity and inspiration. Whether you need a quick pick-me-up or just a smile, CheerBot delivers uplifting quotes and cheerful vibes at your command.
@@ -40,3 +42,7 @@ CheerBot was inspired by our experiences at BrainStation. We noticed that many o
 ## API
 
 This project relies on [Zen Quotes](https://zenquotes.io) for fetching random quotes.
+
+## Image
+
+*Image from [Freepik](https://www.freepik.com/icon/robot_8503132#fromView=search&page=1&position=76&uuid=e4ab5ee1-fb4b-45a5-a76d-ed14a489a22f).*
