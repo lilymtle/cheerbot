@@ -1,5 +1,5 @@
 import { Client, Collection, Events, GatewayIntentBits } from "discord.js";
-import { readdirSync } from "fs";
+import { readdirSync, statSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 import "dotenv/config";
@@ -12,7 +12,9 @@ const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 client.commands = new Collection();
 
 const foldersPath = join(__dirname, "commands");
-const commandFolders = readdirSync(foldersPath);
+const commandFolders = readdirSync(foldersPath).filter(folder =>
+    statSync(join(foldersPath, folder)).isDirectory() 
+);
 
 for (const folder of commandFolders) {
     const commandsPath = join(foldersPath, folder);
@@ -47,8 +49,15 @@ for (const folder of commandFolders) {
 //     }
 // }
 
-client.once(Events.ClientReady, readyClient => {
+client.once(Events.ClientReady, async readyClient => {
 	console.log(`Ready! Logged in as ${readyClient.user.tag}`);
+
+	try {
+		await readyClient.user.setAvatar("./assets/cheerbot.png");
+		console.log("Avatar set successfully.");
+	} catch (error) {
+		console.error("Failed to set avatar:", error);
+	}
 });
 
 client.on(Events.InteractionCreate, async interaction => {
